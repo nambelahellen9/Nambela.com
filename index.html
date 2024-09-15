@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Development Tutorial</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #1e1e1e;
+            color: #dcdcdc;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #f4f4f4;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #00bcd4;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .example {
+            background: #2d2d2d;
+            border: 1px solid #444;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        .highlight {
+            background: #ffeb3b;
+            color: #000;
+        }
+        .exercise {
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: 1px solid #444;
+        }
+        .exercise pre {
+            margin: 0;
+            overflow-x: auto;
+        }
+        .output {
+            background: #2d2d2d;
+            border: 1px solid #444;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+        .button {
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .button:hover {
+            background: #0097a7;
+        }
+        footer {
+            background: #333;
+            color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Development Tutorial</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>1. HTML Basics</h2>
+            <p>HTML (HyperText Markup Language) structures the content of web pages. Below is a basic structure of an HTML document.</p>
+
+            <h3>HTML Structure Example</h3>
+            <div class="example">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Welcome to My Web Page&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+
+            <h3>Exercise: Create a Basic HTML Page</h3>
+            <div class="exercise">
+                <p>Follow the steps below to create your own HTML page:</p>
+                <ol>
+                    <li>Create a new file named <code>index.html</code>.</li>
+                    <li>Use the structure provided above to set up your HTML file.</li>
+                    <li>Add a <code>&lt;h2&gt;</code> tag with the text "My First Heading" and a <code>&lt;p&gt;</code> tag with some text.</li>
+                </ol>
+                <button class="button" onclick="showExerciseResult('html')">Show Example</button>
+                <div id="html-exercise-output" class="output"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. CSS Basics</h2>
+            <p>CSS (Cascading Style Sheets) is used to style HTML elements. Below is an example of CSS styling.</p>
+
+            <h3>CSS Styling Example</h3>
+            <div class="example">
+                <pre><code>body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #007BFF;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}</code></pre>
+            </div>
+
+            <h3>Exercise: Style Your HTML Page</h3>
+            <div class="exercise">
+                <p>Apply CSS styling to your HTML page as follows:</p>
+                <ol>
+                    <li>In your <code>index.html</code> file, add a <code>&lt;style&gt;</code> section inside the <code>&lt;head&gt;</code> tag.</li>
+                    <li>Style the <code>&lt;h1&gt;</code> and <code>&lt;p&gt;</code> tags using CSS.</li>
+                    <li>Ensure the page has a consistent font and color scheme.</li>
+                </ol>
+                <button class="button" onclick="showExerciseResult('css')">Show Example</button>
+                <div id="css-exercise-output" class="output"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. JavaScript Basics</h2>
+            <p>JavaScript adds interactivity to web pages. Below is an example of a simple JavaScript function.</p>
+
+            <h3>JavaScript Example</h3>
+            <div class="example">
+                <pre><code>&lt;script&gt;
+function showAlert() {
+    alert('Hello, World!');
+}
+&lt;/script&gt;</code></pre>
+            </div>
+
+            <h3>Exercise: Add Interactivity</h3>
+            <div class="exercise">
+                <p>Add a JavaScript function to your HTML page:</p>
+                <ol>
+                    <li>Include a <code>&lt;button&gt;</code> element in your HTML file.</li>
+                    <li>Use JavaScript to display an alert with a message when the button is clicked.</li>
+                </ol>
+                <button class="button" onclick="showExerciseResult('js')">Show Example</button>
+                <div id="js-exercise-output" class="output"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Putting It All Together</h2>
+            <p>Here’s a complete example that combines HTML, CSS, and JavaScript:</p>
+
+            <div class="example">
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Complete Web Page&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .output {
+            border: 1px solid #ddd;
+            padding: 10px;
+            background: #e9ecef;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Interactive Web Page&lt;/h1&gt;
+    &lt;p&gt;Click the button below to see JavaScript in action.&lt;/p&gt;
+    &lt;button onclick="showAlert()"&gt;Click Me&lt;/button&gt;
+
+    &lt;script&gt;
+    function showAlert() {
+        alert('Hello, World!');
+    }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created as an educational example. For more tutorials, visit <a href="https://github.com/your-repo" target="_blank" style="color: #00bcd4;">GitHub Repository</a>.</p>
+    </footer>
+
+    <script>
+        function showExerciseResult(exerciseType) {
+            let result;
+            switch (exerciseType) {
+                case 'html':
+                    result = `
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head
